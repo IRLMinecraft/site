@@ -1,6 +1,9 @@
-Minecraft Portal Website Template
+Official Website for IRLMinecraft.com
+(temporary)
 
 Developed by AlexKvazos
-This template is only available at http://mc-market.org
+Modified by Rega
 
-Thank you for your preference!
+Join the server using PLAY.IRLMINECRAFT.COM
+
+Template (c) AlexKvazos via MC-MARKET.ORG
