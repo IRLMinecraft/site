@@ -1,46 +1,94 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>IRLMinecraft</title>
-        
-        <style>
-            #title {
-                font-family: sans-serif;
-                font-size: 36px;
-                width: 800px;
-                padding-top: 70px;
-                margin: 15px auto;
-            }
-            
-            #exp {
-                font-family: sans-serif;
-                font-size: 16px;
-                width: 800px;
-                margin: 0 auto;
-                color: #666;
-            }
-            
-            a {
-                text-decoration: none;
-                color: #288DB5;
-                background-color: inherit;
-            }
-            
-            a:hover {
-                color: #58BFE8;
-                background-color: #fff;
-            }
-        </style>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>IRLMinecraft &bull; Home</title>
+
+  <!-- meta -->
+  <meta name="description" content="The #1 interactive real life city simulation server on Minecraft.">
+  <meta name="tags" content="minecraft, irl, irlminecraft, irlmc, city, rp, role, play, roleplay, rpg, server">
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
     </head>
-
     <body>
-        <h1 id="title">IRLMinecraft.com</h1>
-        <p id="exp">The website for this server is currently under construction.</p>
-        <br>
-        <p id="exp">&bull; <strong>Connect Using:</strong> PLAY.IRLMINECRAFT.COM</p>
-        <p id="exp">&bull; <strong>Twitter:</strong> <a href="http://irlmc.co/1FyZrVY">Click</a></p>
-        <p id="exp">&bull; <strong>Store:</strong> <a href="http://irlmc.co/1L1tG8j">Click</a></p>
-    </body>
 
-</html>
-<!-- Website design not made by us... lmfao -->
+      <!-- banner start -->
+      <div class="banner">
+
+        <img style="display:none" class="img-responsive" src="/img/logo.png" width="400px">
+
+        <h1 style="display:none;">
+          Join the most interactive real life city simulation server on Minecraft!<br>
+          You will not be dissapointed! 
+        </h1>
+
+        <p style="display:none" class="btn btn-ip">Connect to: play.irlminecraft.com</p>
+
+      </div>
+      <!-- banner end -->
+
+
+      <!-- icons start -->
+      <div class="icons" style="display:none">
+        <p>
+          <a class="icon" id="Store" href="http://irl-minecraft.buycraft.net/"> <i class="fa fa-dollar"></i> </a>
+          <a class="icon" id="Twitter" href="http://www.twitter.com/IRLMinecraft"> <i class="fa fa-twitter"></i> </a>
+          <a class="icon" id="Reddit" href="https://www.reddit.com/r/irlmcofficial/"> <i class="fa fa-reddit"></i> </a>
+        </p>
+
+        <!-- this p element indicates the hovered button's name, no need to touch it -->
+        <p class="indicator">&nbsp;</p>
+
+      </div>
+      <!-- icons end -->
+
+      <!-- footer start -->
+      <p class="footer" style="display:none">Copyright &copy; 2015 | IRLMinecraft.com</p> 
+      <!-- footer end -->
+
+
+      <!-- javascript -->
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+      <script type="text/javascript">
+
+      // Update the button indicator on mouse enter
+      $('.icon').mouseenter(function() {
+        $('.indicator').html(this.id);
+      });
+
+      // Clear the button indicator on mouse leave
+      $('.icon').mouseleave(function() {
+        $('.indicator').html('&nbsp;');
+      });
+
+      // Procedural fade of each element
+      $(document).ready(function() {
+        $('img').fadeIn(function() {
+          $('h1').fadeIn(function() {
+            $('p').fadeIn(function() {
+              $('.icons').fadeIn(function() {
+                $('.footer').fadeIn();
+              });
+            });
+          });
+        });
+      });
+
+      </script>
+
+    </body>
+    </html>
